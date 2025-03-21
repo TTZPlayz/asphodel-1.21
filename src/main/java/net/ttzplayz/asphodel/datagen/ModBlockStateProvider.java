@@ -53,6 +53,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RESIN_CLUMP);
         blockWithItem(ModBlocks.RESIN_BLOCK);
         blockWithItem(ModBlocks.RESIN_BRICKS);
+        blockWithItem(ModBlocks.CHISELED_RESIN_BRICKS);
+
+        stairsBlock(ModBlocks.RESIN_BRICK_STAIRS.get(), blockTexture(ModBlocks.RESIN_BRICKS.get()));
+        slabBlock(ModBlocks.RESIN_BRICK_SLAB.get(), blockTexture(ModBlocks.RESIN_BRICKS.get()), blockTexture(ModBlocks.RESIN_BRICKS.get()));
+        wallBlock(ModBlocks.RESIN_BRICK_WALL.get(), blockTexture(ModBlocks.RESIN_BRICKS.get()));
+
+        blockItem(ModBlocks.RESIN_BRICK_STAIRS);
+        blockItem(ModBlocks.RESIN_BRICK_SLAB);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

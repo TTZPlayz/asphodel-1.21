@@ -39,7 +39,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.RESIN_CLUMP.get())
                 .add(ModBlocks.RESIN_BLOCK.get())
-                .add(ModBlocks.RESIN_BRICKS.get());
+                .add(ModBlocks.RESIN_BRICKS.get())
+
+                .add(ModBlocks.RESIN_BRICK_STAIRS.get())
+                .add(ModBlocks.RESIN_BRICK_SLAB.get())
+                .add(ModBlocks.RESIN_BRICK_WALL.get());
+
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.PALE_MOSS_BLOCK.get())
                 .add(ModBlocks.PALE_WILLOW_LEAVES.get())
@@ -62,7 +67,26 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.PALE_WILLOW_TRAPDOOR.get());
         tag(BlockTags.SIGNS);
         // add sign and hanging sign
-
-
+// NON-BLOCKS
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.PALE_WILLOW_FENCE.get());
+        tag(BlockTags.STAIRS)
+                .add(ModBlocks.PALE_WILLOW_STAIRS.get())
+                .add(ModBlocks.RESIN_BRICK_STAIRS.get());
+        tag(BlockTags.SLABS)
+                .add(ModBlocks.PALE_WILLOW_SLAB.get())
+                .add(ModBlocks.RESIN_BRICK_SLAB.get());
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.RESIN_BRICK_WALL.get());
+        tag(BlockTags.BUTTONS)
+                .add(ModBlocks.PALE_WILLOW_BUTTON.get());
+        tag(BlockTags.TRAPDOORS)
+                .add(ModBlocks.PALE_WILLOW_TRAPDOOR.get());
+        tag(BlockTags.DOORS)
+                .add(ModBlocks.PALE_WILLOW_DOOR.get());
+        tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.PALE_WILLOW_PRESSURE_PLATE.get());
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PALE_WILLOW_FENCE_GATE.get());
     }
 }

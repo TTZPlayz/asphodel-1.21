@@ -90,22 +90,30 @@ public class ModBlocks {
 
     // RESIN BLOCKS
 
-
+    //edit to tile-block
     public static final DeferredBlock<Block> RESIN_CLUMP = registerBlock("resin_clump",
-            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.STONE).noCollission().strength(0)));
 
     public static final DeferredBlock<Block> RESIN_BLOCK = registerBlock("resin_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     public static final DeferredBlock<Block> RESIN_BRICKS = registerBlock("resin_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<Block> CHISELED_RESIN_BRICKS = registerBlock("chiseled_resin_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     // RESIN NON-BLOCKS
 
-//    public static final DeferredBlock<StairBlock> RESIN_STAIRS = registerBlock("resin_stairs",
-//            () -> new StairBlock(ModBlocks.RESIN_BRICKS.get().defaultBlockState(),
-//                    BlockBehaviour.Properties.of()
-//                            .strength(2f)
-//                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<StairBlock> RESIN_BRICK_STAIRS = registerBlock("resin_brick_stairs",
+            () -> new StairBlock(ModBlocks.RESIN_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<SlabBlock> RESIN_BRICK_SLAB = registerBlock("resin_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<WallBlock> RESIN_BRICK_WALL = registerBlock("resin_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
 
     //END OF BLOCKS
 

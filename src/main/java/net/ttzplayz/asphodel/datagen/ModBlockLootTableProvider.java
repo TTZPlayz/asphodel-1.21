@@ -53,6 +53,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RESIN_CLUMP.get());
         dropSelf(ModBlocks.RESIN_BLOCK.get());
         dropSelf(ModBlocks.RESIN_BRICKS.get());
+        dropSelf(ModBlocks.CHISELED_RESIN_BRICKS.get());
+
+        dropSelf(ModBlocks.RESIN_BRICK_STAIRS.get());
+        dropSelf(ModBlocks.RESIN_BRICK_SLAB.get());
+        dropSelf(ModBlocks.RESIN_BRICK_WALL.get());
+
     }
 
 

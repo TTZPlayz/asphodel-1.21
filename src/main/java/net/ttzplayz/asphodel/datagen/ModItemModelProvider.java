@@ -29,8 +29,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.PALE_WILLOW_FENCE, ModBlocks.PALE_WILLOW_PLANKS);
 
         // add sign and hanging sign
+        wallItem(ModBlocks.RESIN_BRICK_WALL, ModBlocks.RESIN_BRICKS);
+
 
         basicItem(ModBlocks.PALE_WILLOW_DOOR.asItem());
+        basicItem(ModBlocks.RESIN_CLUMP.asItem());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
@@ -56,11 +59,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation.parse("item/handheld")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(Asphodel.MOD_ID,"item/" + item.getId().getPath()));
     }
-
-
-
-
-
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),

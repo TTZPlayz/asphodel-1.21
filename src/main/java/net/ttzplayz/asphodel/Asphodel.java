@@ -81,10 +81,13 @@ public class Asphodel {
             event.accept(ModBlocks.PALE_WILLOW_DOOR);
             event.accept(ModBlocks.PALE_WILLOW_TRAPDOOR);
 
-
             event.accept(ModBlocks.RESIN_BLOCK);
             event.accept(ModBlocks.RESIN_BRICKS);
+            event.accept(ModBlocks.CHISELED_RESIN_BRICKS);
 
+            event.accept(ModBlocks.RESIN_BRICK_STAIRS);
+            event.accept(ModBlocks.RESIN_BRICK_SLAB);
+            event.accept(ModBlocks.RESIN_BRICK_WALL);
 
         }
     }
